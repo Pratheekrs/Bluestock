@@ -1,0 +1,29 @@
+fund_master schemes: 40
+nav_history unique schemes: 40
+Codes in fund_master missing from nav_history: 0
+Codes in nav_history not present in fund_master: 0
+RESULT: All AMFI codes match cleanly between the two datasets.
+
+Null counts per dataset (columns with any nulls):
+  fund_master: no nulls
+  nav_history: no nulls
+  aum_by_fund_house: no nulls
+  monthly_sip_inflows: {'yoy_growth_pct': np.int64(12)}
+  category_inflows: no nulls
+  industry_folio_count: no nulls
+  scheme_performance: no nulls
+  investor_transactions: no nulls
+  portfolio_holdings: no nulls
+  benchmark_indices: no nulls
+
+Duplicate row counts per dataset:
+  fund_master: 0 duplicate rows
+  nav_history: 0 duplicate rows
+  aum_by_fund_house: 0 duplicate rows
+  monthly_sip_inflows: 0 duplicate rows
+  category_inflows: 0 duplicate rows
+  industry_folio_count: 0 duplicate rows
+  scheme_performance: 0 duplicate rows
+  investor_transactions: 0 duplicate rows
+  portfolio_holdings: 0 duplicate rows
+  benchmark_indices: 0 duplicate rows
