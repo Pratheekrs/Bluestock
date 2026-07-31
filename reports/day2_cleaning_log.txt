@@ -1,0 +1,38 @@
+
+======================================================================
+CLEANING: nav_history.csv
+======================================================================
+Duplicates removed: 0
+Invalid NAV values (<=0 or null) after fill: 0
+Rows before cleaning: 46000 | after cleaning: 64320
+
+======================================================================
+CLEANING: investor_transactions.csv
+======================================================================
+Unrecognised transaction_type values: 0
+Invalid amounts (<=0): 0
+Unrecognised kyc_status values: 0
+Duplicate rows removed: 0
+Rows before cleaning: 32778 | after cleaning: 32778
+
+======================================================================
+CLEANING: scheme_performance.csv
+======================================================================
+Funds flagged with negative Sharpe ratio: 0
+Funds with expense_ratio outside 0.1%-2.5%: 0
+Rows before cleaning: 40 | after cleaning: 40
+
+======================================================================
+PASSTHROUGH: remaining datasets (no anomalies found on Day 1)
+======================================================================
+  fund_master: 40 rows -> data\processed\clean_fund_master.csv
+  aum_by_fund_house: 90 rows -> data\processed\clean_aum_by_fund_house.csv
+  monthly_sip_inflows: 48 rows -> data\processed\clean_monthly_sip_inflows.csv
+  category_inflows: 144 rows -> data\processed\clean_category_inflows.csv
+  industry_folio_count: 21 rows -> data\processed\clean_industry_folio_count.csv
+  portfolio_holdings: 322 rows -> data\processed\clean_portfolio_holdings.csv
+  benchmark_indices: 8050 rows -> data\processed\clean_benchmark_indices.csv
+
+======================================================================
+DONE - all 10 cleaned CSVs written to data/processed/
+======================================================================
